@@ -1,0 +1,10 @@
+The following are the outputs of the 'sensors.py' code:
+
+
+699 - Alarm is ON
+448 - Alarm is OFF
+73 - Alarm is OFF
+152 - Alarm is OFF
+754 - Alarm is ON
+257 - Alarm is OFF
+989 - Alarm is ON
