@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "author": "Dinesh",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 108.96, "left": -43.36, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo1", "top": 6.32, "left": 231.31, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": 74.56,
+      "left": 540.08,
+      "attrs": { "temperature": "-40", "humidity": "0" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "servo1:GND", "esp:GND.1", "black", [ "h-99.03", "v148.7" ] ],
+    [ "dht1:GND", "esp:GND.1", "black", [ "v31.71", "h-131.73", "v-50.91" ] ],
+    [ "dht1:SDA", "esp:D15", "green", [ "v13.69", "h-93.63", "v-43.86" ] ],
+    [ "servo1:V+", "esp:3V3", "red", [ "h-86.84", "v182.35" ] ]
+  ]
+}
